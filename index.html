@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     
+        Name
+        <input type="Name" id="username">
+        <hr>
+        <br>
+        Email:<input type="email" id="email">
+        <hr>
+        <br>
+        Password:<input type="password" id="password">
+        <hr>
+        <br>
+        <button onclick="SignUp()">SignUp</button> -->
+
+
+    <div class="form">
+
+        <input id="account" name="radioaccount" type="radio" class="radio radio--invisible" />
+        <input id="noaccount" name="radioaccount" type="radio" class="radio radio--invisible" checked/>
+        <div class="form_background">
+            <div class="form-group form-group--account">
+                <h3 class="form-group_title">Log in</h3>
+                <input class="form-group_input" type="email" placeholder="Email" id="login-email" />
+                <div class="pas-inp">
+                <input class="form-group_input" type="password" placeholder="Password" id="login-password" />
+                <i onclick="showPassword(this)" class="far fa-eye"></i>
+                </div>
+                <button class="button button--form" onclick="login()">Log in</button>
+            </div>
+
+
+
+            <div class="form-group form-group--noaccount">
+                <h3 class="form-group_title">Registration</h3>
+                <input class="form-group_input" type="text" placeholder="Full Name" id="username" />
+                <input class="form-group_input" type="email" placeholder="Email" id="email" />
+                <div class="pas-inp">
+                    <input class="form-group_input" type="password" placeholder="Password" id="password" />
+                <i onclick="showPassword(this)" class="far fa-eye"></i>
+                </div>
+                <input class="form-group_input" type="tel" placeholder="Cell No" id="tel" />
+                <input class="form-group_input" type="text" placeholder="Adress" id="address" />
+                
+                <button class="button button--form" onclick="SignUp()">Register</button>
+            </div>
+        </div>
+
+        <fieldset class="fieldset">
+            <h2>Don't have an account ?</h2>
+            <div class="form_content form_content--noaccount">
+
+            </div>
+            <label for="noaccount" class="button">Signup</label>
+        </fieldset>
+        <fieldset class="fieldset">
+            <h2>Have an account ?</h2>
+                <div class="form_content form_content--noaccount">
+
+            </div>
+            <label for="account" class="button">login</label>
+             </fieldset>
+            </div>
+
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
